@@ -11,6 +11,15 @@ body {
   border-radius: 0.5rem;
 }
 
+.HeadText {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 5vw;
+  width: 100vw;
+  text-align: center;
+}
+
 .KleineMededeling {
   text-align: center;
 }
@@ -100,7 +109,8 @@ body {
   text-align: center;
 }
 
-.Info, .Info-Mobile {
+.Info,
+.Info-Mobile {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30vw 30vw 30vw;
@@ -117,34 +127,6 @@ body {
   display: none;
 }
 
-.honden {
-  display: -ms-grid;
-  display: grid;
-  display: grid;
-  -ms-grid-columns: 20vw 20vw 20vw 20vw;
-      grid-template-columns: 20vw 20vw 20vw 20vw;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.honden img {
-  width: 100%;
-  border-radius: 0.5rem;
-  margin-bottom: 1.4rem;
-  cursor: pointer;
-}
-
-.honden a {
-  text-decoration: none;
-}
-
 .zoomHover {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -157,17 +139,31 @@ body {
           transform: scale(1.1);
 }
 
-.ButtonHonden {
-  background-color: #36424f;
-  height: 3rem;
-  border-radius: 1rem;
-  text-align: center;
-  color: white;
+.Slot-Text {
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
-.Slot-Text {
-  margin-left: 25vw;
-  margin-right: 25vw;
+@media screen and (max-width: 1300px) {
+  .HeadText {
+    position: absolute;
+    top: 30%;
+    color: white;
+    font-size: 5vw;
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .HeadText {
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-size: 5vw;
+    width: 100vw;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -183,10 +179,6 @@ body {
   }
   .Info h2 {
     font-size: 1.3rem;
-  }
-  .honden {
-    -ms-grid-columns: 40vw 40vw;
-        grid-template-columns: 40vw 40vw;
   }
 }
 
@@ -206,11 +198,6 @@ body {
   .Info-Mobile {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 80vw;
-        grid-template-columns: 80vw;
-  }
-  .honden {
-    margin-top: 3rem;
     -ms-grid-columns: 80vw;
         grid-template-columns: 80vw;
   }

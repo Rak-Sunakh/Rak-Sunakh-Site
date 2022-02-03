@@ -11,6 +11,15 @@ body {
     border-radius: 0.5rem;
 }
 
+.HeadText {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 5vw;
+    width: 100vw;
+    text-align: center;
+}
+
 .KleineMededeling {
     text-align: center;
 }
@@ -81,39 +90,17 @@ body {
     text-align: center;
 }
 
-.Info, .Info-Mobile {
+.Info,
+.Info-Mobile {
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
     justify-content: center;
     align-items: center;
 }
 
-.Info-Mobile{
+.Info-Mobile {
     display: none;
 }
-
-.honden {
-    display: grid;
-    display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        width: 100%;
-        border-radius: 0.5rem;
-        margin-bottom: 1.4rem;
-        cursor: pointer;
-    }
-
-    a{
-        text-decoration: none;
-    }
-}
-
 
 .zoomHover {
     transition: transform 0.2s;
@@ -123,17 +110,33 @@ body {
     transform: scale(1.1);
 }
 
-.ButtonHonden {
-    background-color: #36424f;
-    height: 3rem;
-    border-radius: 1rem;
-    text-align: center;
-    color: white;
+.Slot-Text {
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
-.Slot-Text {
-    margin-left: 25vw;
-    margin-right: 25vw;
+@media screen and (max-width: 1300px) {
+    .HeadText {
+        position: absolute;
+        top: 30%;
+        color: white;
+        font-size: 5vw;
+        width: 100vw;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .HeadText {
+        position: absolute;
+        top: 20%;
+        color: white;
+        font-size: 5vw;
+        width: 100vw;
+        text-align: center;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -144,56 +147,45 @@ body {
         margin-bottom: 1rem;
     }
 
-    .Info{
+    .Info {
         gap: 3%;
 
-        h2{
+        h2 {
             font-size: 1.3rem;
         }
-    }
-
-    .honden{
-        grid-template-columns: 40vw 40vw;
     }
 }
 
 @media screen and (max-width: 700px) {
-
-    .Info{
+    .Info {
         gap: 1%;
 
-        h2{
+        h2 {
             font-size: 1.1rem;
         }
     }
 }
 
 @media screen and (max-width: 600px) {
-
-    .Info{
+    .Info {
         display: none;
     }
 
-    .Info-Mobile{
+    .Info-Mobile {
         display: grid;
         grid-template-columns: 80vw;
     }
 
-    .honden{
-        margin-top: 3rem;
-        grid-template-columns: 80vw;
-    }
-
-    .Slot-Text{
+    .Slot-Text {
         margin-left: 10%;
         margin-right: 10%;
     }
 
-    .mededeling{
+    .mededeling {
         margin: 1rem;
     }
 
-    .HeadIMG{
+    .HeadIMG {
         margin-top: 5rem;
     }
 }

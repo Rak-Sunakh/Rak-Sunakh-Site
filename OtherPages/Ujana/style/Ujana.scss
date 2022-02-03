@@ -39,6 +39,14 @@ main {
             border-radius: 1rem;
         }
 
+        .BigScreen{
+            display: block;
+        }
+
+        .SmallScreen{
+            display: none;
+        }
+
     }
 
     .UjanaHead {
@@ -73,6 +81,14 @@ main {
     main {
         .imagesUjana {
             grid-template-columns: 35vw 35vw;
+
+            .BigScreen{
+                display: none;
+            }
+
+            .SmallScreen{
+                display: block;
+            }
 
             img {
                 border-radius: 0;

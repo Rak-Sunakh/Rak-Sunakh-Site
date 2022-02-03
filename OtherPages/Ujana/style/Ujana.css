@@ -51,6 +51,14 @@ main .imagesUjana img:hover {
   border-radius: 1rem;
 }
 
+main .imagesUjana .BigScreen {
+  display: block;
+}
+
+main .imagesUjana .SmallScreen {
+  display: none;
+}
+
 main .UjanaHead {
   border-radius: 100%;
   width: 20vw;
@@ -86,6 +94,12 @@ main .ExtraInfo p {
   main .imagesUjana {
     -ms-grid-columns: 35vw 35vw;
         grid-template-columns: 35vw 35vw;
+  }
+  main .imagesUjana .BigScreen {
+    display: none;
+  }
+  main .imagesUjana .SmallScreen {
+    display: block;
   }
   main .imagesUjana img {
     border-radius: 0;
