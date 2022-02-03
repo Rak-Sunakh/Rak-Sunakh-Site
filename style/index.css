@@ -1,0 +1,228 @@
+body {
+  background-color: white;
+  color: #707070;
+  height: 100%;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 16px;
+}
+
+.HeadIMG {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.KleineMededeling {
+  text-align: center;
+}
+
+.mededeling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem;
+}
+
+.mededeling .button-OverOns {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: darkred;
+  padding: 0.6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+  border: 0px;
+}
+
+.mededeling .Link-Rasstandaard {
+  margin-left: 1rem;
+  color: #707070;
+}
+
+.Foto-Card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40vw 40vw;
+      grid-template-columns: 40vw 40vw;
+  -ms-grid-rows: 30vw;
+      grid-template-rows: 30vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5rem;
+  gap: 5%;
+  position: static;
+}
+
+.Foto-Card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.Button {
+  background-color: #36424f;
+  width: 80%;
+  height: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.WordLidButton {
+  margin-bottom: 3rem;
+}
+
+.Button:hover {
+  color: red;
+}
+
+.Center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.Info, .Info-Mobile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 30vw 30vw;
+      grid-template-columns: 30vw 30vw 30vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Info-Mobile {
+  display: none;
+}
+
+.honden {
+  display: -ms-grid;
+  display: grid;
+  display: grid;
+  -ms-grid-columns: 20vw 20vw 20vw 20vw;
+      grid-template-columns: 20vw 20vw 20vw 20vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.honden img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+}
+
+.honden a {
+  text-decoration: none;
+}
+
+.zoomHover {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.zoomHover:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.ButtonHonden {
+  background-color: #36424f;
+  height: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.Slot-Text {
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+@media screen and (max-width: 800px) {
+  .Foto-Card {
+    -ms-grid-columns: 80vw;
+        grid-template-columns: 80vw;
+    gap: 6rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+  }
+  .Info {
+    gap: 3%;
+  }
+  .Info h2 {
+    font-size: 1.3rem;
+  }
+  .honden {
+    -ms-grid-columns: 40vw 40vw;
+        grid-template-columns: 40vw 40vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Info {
+    gap: 1%;
+  }
+  .Info h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Info {
+    display: none;
+  }
+  .Info-Mobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80vw;
+        grid-template-columns: 80vw;
+  }
+  .honden {
+    margin-top: 3rem;
+    -ms-grid-columns: 80vw;
+        grid-template-columns: 80vw;
+  }
+  .Slot-Text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .mededeling {
+    margin: 1rem;
+  }
+  .HeadIMG {
+    margin-top: 5rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

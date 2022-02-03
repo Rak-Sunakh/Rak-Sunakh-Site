@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/OtherPages/contact/style/contact.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <main>
+
+        <h1>Contact</h1>
+        <p>We zijn er altijd om jullie te informeren en te helpen.
+            <br>
+            Aarzel niet om ons te schrijven of te bellen met gelijk welke vraag u heeft !
+            <br>
+            24/7 staan wij paraat.
+        </p>
+
+        <div class="gridContact">
+
+            <div class="ContactInfo">
+                <h2>
+                    Rak Sunakh Belgian -
+                    <br>
+                    Thai Ridgeback kennel
+                </h2>
+                <p>Bevrijdingslaan 85 - 9200 Dendermonde - België</p>
+                <p class="GSMNummer">
+                    Serge +32 496 60 64 41
+                    <br>
+                    Katleen +32 494 25 88 69
+                </p>
+            </div>
+
+            <div class="form">
+                <form method="post" enctype="text/plain" action="mailto:leemans.se@gmail.com">
+                    <fieldset>
+                        <legend>Contactformulier</legend>
+
+                        <label>Voornaam:
+                            <br>
+                            <input type="text" name="Voornaam" placeholder="voornaam" required>
+                        </label>
+                        <br>
+                        <label>Familienaam:
+                            <br>
+                            <input type="text" name="Familienaam" placeholder="familienaam" required>
+                        </label>
+                        <br>
+                        <label>Email:
+                            <br>
+                            <input type="email" placeholder="email" name="Email" required>
+                        </label>
+                        <br>
+                        <label>Je Bericht
+                            <br>
+                            <textarea name="Bericht inhoud" cols="30" rows="10"
+                                placeholder="zet hier jouw bericht"></textarea>
+                        </label>
+                        <br>
+                        <br>
+
+                        <input class="Button zoomHover" type="submit" value="Verzenden">
+                        <input class="Button zoomHover" type="reset" value="Leegmaken">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="MapDiv">
+            <iframe class="Map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d80301.2513860761!2d4.059874!3d51.026972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c390b566d23141%3A0xbb9c62898d18e8b6!2sBevrijdingslaan%2085%2C%209200%20Dendermonde%2C%20Belgium!5e0!3m2!1sen!2sus!4v1642793092242!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+
+        $(function () {
+            $("#nav-placeholder").load("/navbar/navbar.html");
+        });
+
+        $(function () {
+            $("#footer-placeholder").load("/contact/contact.html");
+        });
+    </script>
+</body>
+
+</html>

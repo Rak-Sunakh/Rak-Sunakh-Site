@@ -1,0 +1,109 @@
+main {
+    margin-top: 10rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: #7a7a7a;
+    }
+
+    .gridContact {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 5%;
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+
+        .ContactInfo {
+            text-align: right;
+
+            .GSMNummer {
+                font-size: 2rem;
+            }
+        }
+
+        .form {
+            text-align: left;
+
+            fieldset {
+                border: 0px;
+
+                label {
+                    input {
+                        border-radius: 0.5rem;
+                        height: 2rem;
+                        padding-left: 0.5rem;
+                        width: 80%;
+                    }
+                }
+
+                textarea {
+                    border-radius: 0.5rem;
+                    padding-left: 0.5rem;
+                    padding-top: 0.5rem;
+                    width: 80%;
+                }
+            }
+
+            .Button {
+                background-color: #c40101;
+                border-radius: 2rem;
+                border: 0px;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .MapDiv {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        .Map {
+            width: 90vw;
+            height: 60vh;
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.zoomHover {
+    transition: transform 0.2s; /* Animation */
+}
+
+.zoomHover:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        .gridContact {
+            grid-template-columns: 90vw;
+            justify-content: center;
+            align-items: center;
+
+            .ContactInfo{
+                text-align: center;
+            }
+
+            .form {
+                text-align: center;
+                margin-bottom: 3rem;
+                fieldset {
+                    legend {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

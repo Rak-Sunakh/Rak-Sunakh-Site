@@ -1,0 +1,102 @@
+main {
+    margin-top: 9rem;
+    text-align: center;
+    padding: 2rem;
+
+    .SubTitle {
+        font-size: 1.5rem;
+        margin-top: 0;
+        color: black;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: #6e6e6e;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .imagesSopa {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 22vw 22vw 22vw;
+        gap: 1vw;
+        margin-bottom: 3rem;
+
+        img {
+            width: 100%;
+            transition: transform 0.4s;
+            border-radius: 0.5rem;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+            border-radius: 1rem;
+        }
+
+        .Big-Bottom {
+            grid-column: 2 / 4;
+        }
+
+        .IMGBig {
+            display: none;
+        }
+
+        .IMGSmall {
+            display: block;
+        }
+    }
+
+    .SopaHead {
+        border-radius: 100%;
+        width: 20vw;
+        border: 2px solid black;
+        margin-top: 3rem;
+    }
+
+    .ExtraInfo {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .imagesSopa {
+        img:hover {
+            transform: scale(2);
+            border-radius: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        .imagesSopa {
+            grid-template-columns: 35vw 35vw;
+
+            .Big-Bottom {
+                grid-column: 1 / 3;
+            }
+
+            img {
+                border-radius: 0;
+            }
+
+            img:hover {
+                transform: scale(1);
+                border-radius: 0;
+            }
+        }
+    }
+}

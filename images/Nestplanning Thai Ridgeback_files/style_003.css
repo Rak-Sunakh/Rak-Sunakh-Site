@@ -1,0 +1,507 @@
+/*
+Theme Name: Layers Elementor Child
+Author: Dameer DJ
+Template: layers-elementor
+Version: 1.0.0
+Description: Layers is a revolutionary new way to create websites with WordPress...
+License: General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+body {
+    font-family: 'Josefin Sans',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    color: #555555;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    color: #333333;
+}
+
+body:not(.page-template-template-blank) .wrapper-content > .elementor {
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.header-site .sub-menu, .header-site.invert .sub-menu, 
+.header-site .nav .children, .header-site.invert .nav .children {
+    background: transparent;
+    border: none;
+}
+
+.header-site .sub-menu li a, .header-site .nav .children li a {
+    padding: 12px 15px;
+}
+
+.footer-site {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input[type="button"], input[type="submit"], button, .button, .form-submit input[type="submit"], 
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+}
+input[type="button"]:hover, input[type="submit"]:hover, button:hover, .button:hover, .form-submit input[type="submit"]:hover, 
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+    border: none;
+    color: #FFFFFF;
+    background-color: #36424f !important;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+    color: #FFFFFF;
+    background-color: #c40101;
+    border: none;
+    border-radius: 100px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.story table, table th, table td {
+    font-size: inherit;
+    border-width: 1px;
+}
+
+.story ul.wp-block-gallery {
+    margin: 0;
+}
+
+.sidebar .search-submit {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 12px;
+}
+
+.story, .copy, .story p, .copy p {
+    font-size: inherit;
+}
+.copy.small, .logged-in-as, small {
+    font-size: 1.6rem;
+}
+
+.meta-info {
+    font-size: inherit;
+}
+.hentry footer.meta-info {
+    margin: 3% 0 8% 0;
+}
+
+.meta-info .meta-item {
+    display: inline;
+}
+
+.meta-info p .meta-item::after {
+    content: " / ";
+}
+
+.meta-info p .meta-item:last-child::after {
+    content: "";
+}
+
+.thumbnail > a {
+    display: block;
+    line-height: 0;
+}
+
+.thumbnail > a > img {
+    transition: all 0.45s ease;
+}
+.thumbnail > a:hover > img {
+    transform: scale(1.2);
+}
+
+.push-bottom-large {
+    margin-bottom: 20%;
+}
+
+.pagination li {
+    font-size: inherit;
+}
+
+.pagination a, .pagination span {
+    padding: 12px 20px;
+}
+
+div[class*=" off-canvas-"] {
+    background-color: #36424f;
+}
+
+.dawg-single-header {
+    position: relative;
+    text-align: center;
+}
+
+.dawg-single-header .heading-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.dawg-single-header .heading-wrapper, 
+.dawg-story, 
+.dawg-info {
+    padding: 0 20%;
+}
+
+.dawg-single-header .heading-wrapper .heading {
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+
+.dawg-single-header .heading-wrapper .subheading {
+    font-weight: 300;
+    font-size: 2.75rem;
+}
+
+.dawg-single-header .header-achievements {
+    margin-top: 2rem;
+}
+
+.dawg-story {
+    text-align: center;
+}
+
+.dawg-info-featured-image {
+    text-align: center;
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2rem;
+}
+.dawg-info-featured-image a {
+    display: inline-block;
+    line-height: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(0,0,0,0.03);
+}
+
+.bread-crumbs {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.title-container .heading {
+    font-size: 3.4rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.title-container .excerpt {
+    font-size: 2rem;
+}
+
+#back-to-top {
+    display: block;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+/*** ELEMENTOR ***/
+/* timeline view - about-us page */
+.elementor-element.timeline-left-box {
+    margin-right: 50%;
+    width: 100%;
+}
+.elementor-element.timeline-right-box {
+    margin-left: calc(50% - 1px);
+    width: 100%;
+}
+@media(max-width: 767px) {
+    .elementor-element.timeline-left-box {
+        margin-right: 0;
+        width: 100%;
+    }
+    .elementor-element.timeline-right-box {
+        margin-left: 0;
+    }
+}
+/* pulled or pushed column */
+@media (min-width: 768px) {
+    .column-pushed .elementor-background-overlay {
+        width: 110%;
+    }
+}
+@media (max-width: 767px) {
+    .column-pushed .elementor-background-overlay {
+        width: 90%;
+    }
+}
+@media (min-width: 768px) {
+    .column-pulled .elementor-background-overlay {
+        width: 110%;
+        left: -10%;
+    }
+}
+@media (max-width: 767px) {
+    .column-pulled .elementor-background-overlay {
+        width: 90%;
+        left: 10%;
+        top: -10%;
+    }
+}
+
+/* ELEMENTOR CONSTANT */
+section > .elementor-container > .elementor-row {
+    flex-wrap: wrap !important;
+}
+.centered-columns > .elementor-container > .elementor-row {
+    justify-content: center;
+}
+
+@media (min-width: 1025px) {
+    .container, .title-container .title {
+        max-width: 1140px;
+    }
+    .elementor-element.dynamic-column-half {
+        width: 50% !important;
+    }
+    .elementor-element.dynamic-column-third {
+        width: 33.33% !important;
+    }
+    .elementor-element.dynamic-column-quarter {
+        width: 25% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body:not(.page-template-template-blank) .wrapper-content > .elementor {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .dawg-single-header .heading-wrapper, .dawg-story, .dawg-info {
+        padding: 0 10%;
+    }
+
+    .container, .title-container .title {
+        max-width: 1024px;
+    }
+    .elementor-element.dynamic-column-half {
+        width: 50% !important;
+    }
+    .elementor-element.dynamic-column-third {
+        width: 50% !important;
+    }
+    .elementor-element.dynamic-column-quarter {
+        width: 50% !important;
+    }
+}
+@media (max-width: 767px) {
+
+    body:not(.page-template-template-blank) .wrapper-content > .elementor {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    .dawg-single-header .heading-wrapper, .dawg-story, .dawg-info {
+        padding: 0;
+    }
+
+    .container, .title-container .title {
+        max-width: 767px;
+    }
+    .elementor-element.dynamic-column-half {
+        width: 100% !important;
+    }
+    .elementor-element.dynamic-column-third {
+        width: 100% !important;
+    }
+    .elementor-element.dynamic-column-quarter {
+        width: 100% !important;
+    }
+    /* full-width */
+    .elementor-element.fw-column {
+        width: 100% !important;
+    }
+    /* half-width */
+    .elementor-element.hw-column {
+        width: 50% !important;
+    }
+    /* third-width */
+    .elementor-element.tw-column {
+        width: 33.33% !important;
+    }
+}
+
+/* special case mquery for an old grid system */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .column.sidebar .widget {
+        flex: 0 0 calc(100% - 20px);
+        margin: 0 10px 40px;
+        padding: 0;
+    }
+    .sidebar .search-field {
+        width: 65%;
+        float: left;
+    }
+    .sidebar .search-submit {
+        width: 35%;
+        float: left;
+        height: 36px;
+    }
+     	
+    .header-sticky.is_stuck.is_stuck_show { 
+        position: relative !important;
+    }
+}
+
+/*** CPT and CT ***/
+.ornament-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url( 'assets/images/ornament_01.svg#svgView(preserveAspectRatio(none))' );
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.03;
+}
+
+.ornament-separator {
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+
+}
+
+.ornament-separator .quasi-img {
+    display: inline-block;
+    width: 200px;
+    height: 10px;
+    background-image: url( 'assets/images/divider_03.svg#svgView(preserveAspectRatio(none))' );
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.1;
+    filter: brightness( 0% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+}
+
+/* CPT Dawg */
+table.dawg-info-list {
+    font-size: inherit;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+table.dawg-info-list tr, 
+table.dawg-info-list tr td {
+    border: none;
+}
+table.dawg-info-list tr:not(:last-child) td {
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+table.dawg-info-list tr td .dawg-info-attribute, 
+table.dawg-info-list tr td .dawg-info-value {
+    display: block;
+    background: transparent;
+    border: 0;
+	text-align: center;
+}
+table.dawg-info-list tr td .dawg-info-attribute {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+table.dawg-info-list tr td .dawg-info-value {
+    font-size: 2rem;
+    font-weight: 300;
+}
+table.dawg-info-list tbody > tr:nth-child(2n+1) > td, 
+table.dawg-info-list tbody > tr:nth-child(2n+1) > th, 
+table.dawg-info-list tbody > tr:hover, 
+table.dawg-info-list tbody > tr > td:hover, 
+table.dawg-info-list tbody > tr > th:hover {
+    background: transparent;
+}
+
+/* Dawg Info Box */
+.dawg-info-box .elementor-post__card {
+    overflow: hidden;
+}
+.dawg-info-box .elementor-post__thumbnail__link {
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.dawg-info-box .elementor-post__thumbnail__link img, 
+.dawg-info-box .elementor-post__text {
+    transition: all 0.45s ease;
+}
+.dawg-info-box .elementor-post__card:hover .elementor-post__text {
+    padding-left: 1em;
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.3 );
+}
+.dawg-info-box .elementor-post__card:hover .elementor-post__thumbnail__link img {
+    transform: scale(1.2);
+}
+.dawg-info-box .elementor-post__text {
+    position: absolute;
+    bottom: 0;
+    padding: 0.6em 2em 0 0;
+    background: #FFFFFF;
+    border-radius: 0 50px 0 0;
+    z-index: 2;
+}
+.dawg-info-box .elementor-post__title {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.dawg-info-box .elementor-post__title, 
+.dawg-info-box .dawg--sex {
+    margin: 0;
+    line-height: 1.2;
+}
+.dawg-info-box .dawg--sex {
+    font-weight: 300;
+}
+
+/* swiper settings */
+.dawg-swiper-wrap {
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+}
+.dawg-swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 1.8rem;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+ 
+.dawg-swiper-wrap .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+}
+.dawg-swiper-wrap .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+}
+.dawg-swiper-wrap .swiper-button-next:hover, 
+.dawg-swiper-wrap .swiper-button-prev:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,75 @@
+main{
+    margin-top: 10rem;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+    .gridMeisjes, .gridJongens{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 25vw 25vw 25vw;
+        gap: 3%;
+        margin-bottom: 3rem;
+
+        img{
+            width: 100%;
+            border-radius: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        a{
+            text-decoration: none;
+            margin-bottom: 0;
+        }
+
+        .ButtonHonden {
+            background-color: #36424f;
+            height: 3rem;
+            border-radius: 1rem;
+            text-align: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .ButtonHonden:hover{
+            color: red;
+        }
+    }
+
+    .zoomHover {
+        transition: transform 0.2s; /* Animation */
+    }
+    
+    .zoomHover:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+}
+
+@media screen and (max-width: 800px){
+    main{
+        .gridMeisjes, .gridJongens{
+            grid-template-columns: 40vw 40vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        .gridMeisjes, .gridJongens{
+            grid-template-columns: 80vw;
+        }
+
+        .gridJongens{
+            margin-bottom: 5rem;
+        }
+        
+        .marigin-small{
+            margin-top: 8rem;
+        }
+    }
+}

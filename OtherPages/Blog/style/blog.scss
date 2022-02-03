@@ -1,0 +1,41 @@
+main {
+    margin-top: 10rem;
+    text-align: center;
+    width: 55rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+        color: gray;
+        text-decoration: underline;
+        margin-top: 2rem;
+    }
+
+    p {
+        color: #7a7a7a;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    img,
+    iframe {
+        aspect-ratio: 16/9;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        width: 90vw;
+    }
+
+
+    iframe {
+        aspect-ratio: 16/9;
+    }
+}

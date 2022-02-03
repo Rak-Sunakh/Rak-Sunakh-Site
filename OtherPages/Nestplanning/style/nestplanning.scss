@@ -1,0 +1,127 @@
+body {
+    background-color: white;
+    color: #707070;
+    height: 100%;
+    font-family: "Reem Kufi", sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.Himg {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.head{
+    h1{
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    h5{
+        margin-top: 0;
+        padding: 0%;
+    }
+}
+
+.mededeling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 1rem;
+
+    .button-OverOns {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        background-color: darkred;
+        padding: 0.6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border-radius: 1rem;
+        border: 0px;
+    }
+
+    .Link-Rasstandaard {
+        margin-left: 1rem;
+        color: rgb(112, 112, 112);
+    }
+}
+
+.HoofdNest{
+    text-align: center;
+    width: 80vw;
+    margin-top: 3rem;
+}
+
+img{
+    border-radius: 0.5rem;
+}
+
+.h2Nesten{
+    text-decoration: underline;
+    margin-top: 3rem;
+}
+
+.archief-nesten{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 39.5vw 39.5vw;
+    gap: 1vw;
+    margin-top: 0;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+.subgridNest{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30vw 30vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    .gezonheidsgarantie{
+        border-right: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .ondersteuning{
+        border-right: 1px solid lightgrey;
+        border-top: 1px solid lightgrey;
+    }
+
+    .stamboek{
+        border-left: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .voedingsdeskundige{
+        border-left: 1px solid lightgrey;
+        border-top: 1px solid lightgrey;
+    }
+}
+
+.zoomHover {
+    transition: transform 0.2s; /* Animation */
+}
+
+.zoomHover:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media screen and (max-width: 900px) {
+    .subgridNest{
+        grid-template-columns: 90vw;
+    }
+
+    .archief-nesten{
+        grid-template-columns: 80vw;
+    }
+}
