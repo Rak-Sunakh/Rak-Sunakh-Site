@@ -43,10 +43,12 @@ nav {
             color: white;
 
             .dropdown-content {
-                position: absolute;
                 background-color: #232e38;
+                position: absolute;
                 padding: 0.5rem;
+                padding-right: 1.5rem;
                 margin-top: 1rem;
+                text-align: center;
 
                 a {
                     color: red;

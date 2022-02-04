@@ -68,6 +68,33 @@ main .zoomHover:hover {
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+main .ButtonHonden {
+  background-color: #36424f;
+  height: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+}
+
+main .ButtonHonden:hover {
+  color: red;
+}
+
+main .Mistique {
+  margin-top: 2rem;
+}
+
 @media screen and (max-width: 800px) {
   main .gridMeisjes, main .gridJongens {
     -ms-grid-columns: 40vw 40vw;
