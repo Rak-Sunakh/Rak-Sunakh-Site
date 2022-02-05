@@ -124,6 +124,16 @@ nav {
             cursor: pointer;
         }
 
+        .dropdown-content{
+            margin-left: 1rem;
+            margin-top: 1rem;
+            text-align: center;
+            background-color: #475768;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+
+        }
+
         li {
             margin-bottom: 1rem;
             margin-right: 2rem;

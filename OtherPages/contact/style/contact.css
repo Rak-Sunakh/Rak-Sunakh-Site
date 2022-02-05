@@ -51,6 +51,9 @@ main .gridContact .form fieldset label input {
   height: 2rem;
   padding-left: 0.5rem;
   width: 80%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid grey;
 }
 
 main .gridContact .form fieldset textarea {
@@ -58,12 +61,13 @@ main .gridContact .form fieldset textarea {
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   width: 80%;
+  border: 1px solid grey;
 }
 
 main .gridContact .form .Button {
   background-color: #c40101;
   border-radius: 2rem;
-  border: 0px;
+  border: 1px solid grey;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;

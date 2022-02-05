@@ -126,6 +126,14 @@ nav .zoomHover:hover {
     right: 1rem;
     cursor: pointer;
   }
+  .nav-mobile .dropdown-content {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #475768;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
   .nav-mobile li {
     margin-bottom: 1rem;
     margin-right: 2rem;
