@@ -1,0 +1,111 @@
+main {
+  margin-top: 9rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+main .SubTitle {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: black;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+main p {
+  color: #6e6e6e;
+}
+
+main .imagesKamron {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 22vw 22vw 22vw;
+      grid-template-columns: 22vw 22vw 22vw;
+  gap: 1vw;
+  margin-bottom: 3rem;
+}
+
+main .imagesKamron img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  border-radius: 0.5rem;
+}
+
+main .imagesKamron img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-radius: 1rem;
+}
+
+main .imagesKamron .IMGBig {
+  display: none;
+}
+
+main .imagesKamron .IMGSmall {
+  display: block;
+}
+
+main .KamronHead {
+  border-radius: 100%;
+  width: 20vw;
+  border: 2px solid black;
+  margin-top: 3rem;
+}
+
+main .ExtraInfo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ExtraInfo p {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .imagesPanache img:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .imagesPanache {
+    -ms-grid-columns: 35vw 35vw;
+        grid-template-columns: 35vw 35vw;
+  }
+  main .imagesPanache .IMGSmall {
+    display: none;
+  }
+  main .imagesPanache .IMGBig {
+    display: block;
+  }
+  main .imagesPanache img {
+    border-radius: 0;
+  }
+  main .imagesPanache img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=Kamron.css.map */
