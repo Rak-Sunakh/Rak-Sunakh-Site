@@ -91,8 +91,21 @@ main .ButtonHonden:hover {
   color: red;
 }
 
-main .Mistique {
+main .Mistic {
   margin-top: 2rem;
+  width: 40vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .Mistic img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+main .Mistic a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {

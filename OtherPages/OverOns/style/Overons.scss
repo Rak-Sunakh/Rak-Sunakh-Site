@@ -12,6 +12,10 @@ main {
     text-align: center;
 }
 
+a{
+    color: inherit;
+}
+
 .zoomHover {
     transition: transform 0.2s; /* Animation */
 }

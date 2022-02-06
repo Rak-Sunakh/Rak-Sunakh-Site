@@ -66,8 +66,21 @@ main{
         color: red;
     }
 
-    .Mistique{
+    .Mistic{
         margin-top: 2rem;
+        width: 40vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        img{
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        a{
+            text-decoration: none;
+        }
     }
 }
 
