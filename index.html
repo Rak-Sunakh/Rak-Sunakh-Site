@@ -16,6 +16,17 @@
 
     <div id="nav-placeholder"></div>
 
+    <script>
+
+        $(function () {
+            $("#nav-placeholder").load("/navbar/navbar.html");
+        });
+
+        $(function () {
+            $("#footer-placeholder").load("/contact/contact.html");
+        });
+    </script>
+
     <main>
             <img class="HeadIMG" src="/images/HeadImg.jpg" alt="head IMG">
             <p class="HeadText">Wie zijn deze Thai Ridgebacks?</p>
@@ -120,17 +131,6 @@
     </main>
 
     <div id="footer-placeholder"></div>
-
-    <script>
-
-        $(function () {
-            $("#nav-placeholder").load("/navbar/navbar.html");
-        });
-
-        $(function () {
-            $("#footer-placeholder").load("/contact/contact.html");
-        });
-    </script>
 </body>
 
 </html>
