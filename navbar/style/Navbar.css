@@ -1,51 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 body {
   margin: 0;
-  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 main h1 {
   color: #54595F;
 }
-
 main h2, main h3 {
   color: #54595F;
 }
-
 main p {
   color: #adadad;
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
   width: 100vw;
   top: 0;
   z-index: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #d8d8d8;
 }
-
 nav img {
   width: 7rem;
   margin: 0.5rem;
   margin-right: 2rem;
 }
-
 nav .nav-desktop li {
   float: left;
   list-style-type: none;
   margin-left: 1rem;
   color: white;
 }
-
 nav .nav-desktop li .dropdown-content {
   background-color: #232e38;
   position: absolute;
@@ -54,31 +44,22 @@ nav .nav-desktop li .dropdown-content {
   margin-top: 1rem;
   text-align: center;
 }
-
 nav .nav-desktop li .dropdown-content a {
   color: red;
 }
-
 nav .nav-desktop li a {
   text-decoration: none;
   color: white;
 }
-
 nav details {
   cursor: pointer;
 }
-
 nav .zoomHover {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
   /* Animation */
 }
-
 nav .zoomHover:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -105,9 +86,10 @@ nav .zoomHover:hover {
   .Menu-OpenClose #menu-open {
     display: none;
   }
-  .Menu-OpenClose input[type="checkbox"]:checked ~ .nav-mobile {
+  .Menu-OpenClose input[type=checkbox]:checked ~ .nav-mobile {
     display: block;
   }
+
   .nav-mobile {
     display: none;
     position: fixed;
@@ -146,8 +128,8 @@ nav .zoomHover:hover {
     text-decoration: none;
     color: white;
   }
+
   .nav-desktop {
     display: none;
   }
-}
-/*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar.css.map */
