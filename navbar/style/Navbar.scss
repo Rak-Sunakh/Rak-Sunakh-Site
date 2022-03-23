@@ -3,7 +3,6 @@
 body {
     margin: 0;
     font-family: 'Josefin Sans', Helvetica, sans-serif;
-    overflow: hidden;
 }
 
 main{
@@ -23,7 +22,7 @@ main{
 nav {
     display: flex;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     z-index: 1;
     align-items: center;
