@@ -53,8 +53,24 @@ main{
         .Pups{
             grid-template-columns: 80vw;
 
+            img{
+                aspect-ratio: unset;
+            }
+
             img:hover {
                 transform: scale(1.04);
+            }
+
+            .Span2{
+                grid-column: unset;
+            }
+    
+            .Span12{
+                grid-column: unset;
+            }
+    
+            .Span34{
+                grid-column: unset;
             }
         }
     }
