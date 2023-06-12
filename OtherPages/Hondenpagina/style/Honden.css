@@ -4,33 +4,23 @@ main {
   padding-left: 15vw;
   padding-right: 15vw;
 }
-
 main .gridMeisjes, main .gridJongens {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 25vw 25vw 25vw;
-      grid-template-columns: 25vw 25vw 25vw;
-  gap: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: row;
   margin-bottom: 3rem;
 }
-
 main .gridMeisjes img, main .gridJongens img {
   width: 100%;
   border-radius: 0.5rem;
   margin-bottom: 0;
 }
-
 main .gridMeisjes a, main .gridJongens a {
   text-decoration: none;
   margin-bottom: 0;
 }
-
 main .gridMeisjes .ButtonHonden, main .gridJongens .ButtonHonden {
   background-color: #36424f;
   height: 3rem;
@@ -38,36 +28,20 @@ main .gridMeisjes .ButtonHonden, main .gridJongens .ButtonHonden {
   text-align: center;
   color: white;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
 }
-
 main .gridMeisjes .ButtonHonden:hover, main .gridJongens .ButtonHonden:hover {
   color: red;
 }
-
 main .zoomHover {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  /* Animation */
+  transition: transform 0.2s; /* Animation */
 }
-
 main .zoomHover:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
 main .ButtonHonden {
   background-color: #36424f;
   height: 3rem;
@@ -75,22 +49,14 @@ main .ButtonHonden {
   text-align: center;
   color: white;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
 }
-
 main .ButtonHonden:hover {
   color: red;
 }
-
 main .Mistic {
   margin-top: 2rem;
   width: 40vw;
@@ -98,33 +64,24 @@ main .Mistic {
   margin-left: auto;
   margin-right: auto;
 }
-
 main .Mistic img {
   width: 100%;
   border-radius: 0.5rem;
 }
-
 main .Mistic a {
   text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
   main .gridMeisjes, main .gridJongens {
-    -ms-grid-columns: 40vw 40vw;
-        grid-template-columns: 40vw 40vw;
+    flex-direction: column;
   }
 }
-
 @media screen and (max-width: 600px) {
-  main .gridMeisjes, main .gridJongens {
-    -ms-grid-columns: 80vw;
-        grid-template-columns: 80vw;
-  }
   main .gridJongens {
     margin-bottom: 5rem;
   }
   main .marigin-small {
     margin-top: 8rem;
   }
-}
-/*# sourceMappingURL=Honden.css.map */
+}/*# sourceMappingURL=Honden.css.map */

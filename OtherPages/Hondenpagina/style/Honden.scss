@@ -5,11 +5,11 @@ main{
     padding-right: 15vw;
 
     .gridMeisjes, .gridJongens{
-        display: grid;
+        display: flex;
         justify-content: center;
         align-items: center;
-        grid-template-columns: 25vw 25vw 25vw;
-        gap: 3%;
+        gap: 5rem;
+        flex-direction: row;
         margin-bottom: 3rem;
 
         img{
@@ -87,16 +87,13 @@ main{
 @media screen and (max-width: 800px){
     main{
         .gridMeisjes, .gridJongens{
-            grid-template-columns: 40vw 40vw;
+            flex-direction: column;
         }
     }
 }
 
 @media screen and (max-width: 600px) {
     main{
-        .gridMeisjes, .gridJongens{
-            grid-template-columns: 80vw;
-        }
 
         .gridJongens{
             margin-bottom: 5rem;
