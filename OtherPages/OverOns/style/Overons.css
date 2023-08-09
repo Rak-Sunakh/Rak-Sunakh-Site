@@ -17,17 +17,11 @@ a {
 }
 
 .zoomHover {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  /* Animation */
+  transition: transform 0.2s; /* Animation */
 }
 
 .zoomHover:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .Inleiding {
@@ -36,50 +30,38 @@ a {
   background-position: center;
   background-size: 14rem;
 }
-
 .Inleiding .inleiding-Text {
   margin-left: 25vw;
   margin-right: 25vw;
 }
-
 .Inleiding .inleiding-subTitle {
   font-style: italic;
 }
 
 .oprichters {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20vw 20vw;
-      grid-template-columns: 20vw 20vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: 20vw;
+  justify-content: center;
+  align-items: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-
 .oprichters h3 {
   margin: 0;
   margin-top: 0.5rem;
 }
-
 .oprichters img {
   border-radius: 500rem;
-  border: 5px solid #e2e2e2;
+  border: 5px solid rgb(226, 226, 226);
   height: auto;
   width: 7rem;
 }
-
 .oprichters p {
   margin: 0.3rem;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -108,7 +90,6 @@ a {
   /* The actual content */
   /* Media queries - Responsive timeline on screens less than 600px wide */
 }
-
 .timeline img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -116,30 +97,26 @@ a {
   height: 100%;
   border-radius: 0.5rem;
 }
-
+.timeline .singleIMG {
+  width: 50%;
+}
 .timeline .GridIMG {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   gap: 3%;
 }
-
 .timeline .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
-
 .timeline .left {
   left: 0;
 }
-
 .timeline .right {
   left: 50%;
 }
-
 .timeline .left::before {
   content: " ";
   height: 0;
@@ -151,7 +128,6 @@ a {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #d8d8d8;
 }
-
 .timeline .right::before {
   content: " ";
   height: 0;
@@ -163,14 +139,12 @@ a {
   border-width: 10px 10px 10px 0;
   border-color: transparent #d8d8d8 transparent transparent;
 }
-
 .timeline .content {
   padding: 20px 30px;
   background-color: #d8d8d8;
   position: relative;
   border-radius: 6px;
 }
-
 @media screen and (max-width: 800px) {
   .timeline {
     /* Full-width containers */
@@ -204,13 +178,10 @@ a {
     left: 31px;
   }
   .oprichters {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50vw;
-        grid-template-columns: 50vw;
+    grid-template-columns: 50vw;
   }
   .oprichters p {
     margin-bottom: 1rem;
   }
-}
-/*# sourceMappingURL=Overons.css.map */
+}/*# sourceMappingURL=Overons.css.map */

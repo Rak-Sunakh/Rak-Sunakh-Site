@@ -42,7 +42,7 @@ a{
 
 .oprichters {
     display: grid;
-    grid-template-columns: 20vw 20vw;
+    grid-template-columns: 20vw;
 
     justify-content: center;
     align-items: center;
@@ -97,6 +97,10 @@ a{
         width: 100%;
         height: 100%;
         border-radius: 0.5rem;
+    }
+
+    .singleIMG{
+        width: 50%;
     }
 
     .GridIMG {
